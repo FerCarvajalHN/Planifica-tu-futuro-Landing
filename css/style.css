@@ -27,20 +27,20 @@
 }
 
 @font-face {
-	font-family: Neo-Sans;
-	src: url('/fonts/Neo_Sans.ttf');
+	font-family: 'Neo-Sans';
+	src: url('../fonts/Neo_Sans.ttf');
 }
 
 @font-face {
-	font-family: Neo-SansBold;
+	font-family: 'Neo-SansBold';
 	font-weight: bold;
-	src: url('/fonts/Neo_Sans_Bold.ttf');
+	src: url('../fonts/Neo_Sans_Bold.ttf');
 }
 
 @font-face {
-	font-family: Neo-SansLight;
+	font-family: 'Neo-SansLight';
 	font-weight: lighter;
-	src: url('/fonts/Neo_Sans_Light.ttf');
+	src: url('../fonts/Neo_Sans_Light.ttf');
 }
 
 
@@ -360,13 +360,20 @@ iframe {
 /* ========================================================== */
 /* 			               02. MENU-NAV                       */
 /* ========================================================== */
-
-
-
-#logo img{
-	width: 50%;
-	margin-top: -10px;
+.fa-play {
+	margin-top: 30px;
+	margin-right: 10px;
 }
+
+.video-action {
+	font-size: 16px;
+}
+
+#logo img {
+	width: 25%;
+	margin: -20px 400px;
+}
+
 
 #navbar-collapse-02 li.selected a{
     color: #fff!important;
@@ -611,8 +618,8 @@ ul.zeus-hero-social li i:hover {
 	letter-spacing: 2px;
 	color: var(--blanco-afp);
 	text-align: center;
-	margin-bottom: 75px;
-}
+	margin: 75px 0px;
+	}
 
 
 
@@ -1107,6 +1114,10 @@ select.form-control:not([size]):not([multiple]) {
 	height: calc(4.25rem + 2px);
 }
 
+.g-recaptcha > div {
+	margin: auto;
+}
+
 
 /* ========================================================== */
 /* 			               11. RESPONSIVE                     */
@@ -1114,13 +1125,13 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (min-width: 992px) and (max-width: 1280px){
 
-	.zeus-video-section {
-					background-size: cover;
-		position: relative;
-		background-attachment: fixed;
-	}
+		.zeus-video-section {
+			background-size: cover;
+			position: relative;
+			background-attachment: fixed;
+		}
 
-	.zeus-video-overlay{
+	/* .zeus-video-overlay{
 	background: #141414;
 	opacity: 0.80;
 	position: absolute;
@@ -1129,7 +1140,7 @@ select.form-control:not([size]):not([multiple]) {
 	right: 0;
 	bottom: 0;
 	z-index: 100;
-	}
+	} */
 
 	.zeus-home-title{
 	position: relative;
@@ -1156,7 +1167,7 @@ select.form-control:not([size]):not([multiple]) {
 		position: relative;
 	}
 
-	.zeus-video-overlay{
+	/* .zeus-video-overlay{
 		background: #141414;
 		opacity: 0.80;
 		position: absolute;
@@ -1165,9 +1176,9 @@ select.form-control:not([size]):not([multiple]) {
 		right: 0;
 		bottom: 0;
 		z-index: 100;
-	}	
+	}	 */
 
-	.video-background {display: none;}
+	/* .video-background {display: none;} */
 
 	#contact-form {
 			width: 100%;
@@ -1194,7 +1205,11 @@ select.form-control:not([size]):not([multiple]) {
 	.btn-cta {
 	margin-top: -50px;
 	margin-left: -100px;
+	}
 
+	#logo img {
+		width: 35%;
+		margin: -20px 250px;
 	}
 		
 
@@ -1319,7 +1334,7 @@ select.form-control:not([size]):not([multiple]) {
 	.luna-about-image {
 		display: block;
 		position: relative;
-		width:100%;
+		width: 100%;
 		top: 140px;
 		left: 0%;
 	}
@@ -1332,7 +1347,7 @@ select.form-control:not([size]):not([multiple]) {
 	.zeus-copyright {
 		text-align: center;
 		color: var(--blanco-afp);
-		margin-top:10px;
+		margin-top: 10px;
 	}
 
 	.zeus-copyright a {
@@ -1340,12 +1355,13 @@ select.form-control:not([size]):not([multiple]) {
 		font-weight: 800;
 	}
 
-	
+
 	.zeus-dark-headings-form h3,
 	.zeus-dark-headings-center-form h3,
 	.zeus-dark-headings-about-form h3 {
-		font-size: 28px;
+		font-size: 22px;
 		margin-bottom: 20px;
+
 	}
 
 	.zeus-dark-headings h2,
@@ -1388,20 +1404,20 @@ select.form-control:not([size]):not([multiple]) {
 	}
 
 	.zeus-home-title p {
-		font-size: 36px;
+		font-size: 34px;
 		line-height: 36px;
 		font-family: 'Neo-SansBold', sans-serif;
 		color: var(--blanco-afp);
 	}
 
-	.navbar-header img{
+	.navbar-header img {
 		margin: 0px 80px;
 		padding: 0;
 	}
 
 	.btn-custom {
 		margin: 0px 80px;
-		
+
 	}
 
 	.carousel {
@@ -1434,6 +1450,11 @@ select.form-control:not([size]):not([multiple]) {
 	.footer-custom-text {
 		margin-top: 40px;
 		padding: 0px;
+	}
+
+	#logo img {
+		width: 70%;
+		margin: -15px 55px;
 	}
 
 

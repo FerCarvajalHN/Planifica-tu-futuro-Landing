@@ -25,151 +25,225 @@
 	
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 	   
-    
+    <!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-89969430-3', 'auto');
+		ga('send', 'pageview');
+  	</script>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107219231-1"></script>
+	<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments)};
+			gtag('js', new Date());
+
+			gtag('config', 'UA-107219231-1');
+	</script>
+	<!-- Google Analytics END-->
+
+	<!-- Google Tag Manager --> 
+	<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KZR72RD');
+	</script>
+	<!-- End Google Tag Manager -->
 </head>
 
 <body>
+	<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZR72RD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!--begin header -->
     <header class="header">
 
-        <!--begin nav -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            
-            <!--begin container -->
-            <div class="container">
-        
-                <!--begin navbar -->
-                <div class="navbar-header">
+    	<!--begin nav -->
+    	<nav class="navbar navbar-default navbar-fixed-top">
 
-                    <!--logo -->
-					  <a href="index.html" class="navbar-brand" id="logo"><img src="images/logo2.png"></a>
-			
-                </div>
-                        
-                <div id="" class="btn-custom">
-					<button type="button" class="btn btn-cta btn-lg"><a href="#contact">¡Afiliate hoy!</a></button>
-                </div>
-                <!--end navbar -->
-                                    
-            </div>
+    		<!--begin container -->
+    		<div class="container">
+
+    			<!--begin navbar -->
+    			<div class="navbar-header">
+
+    				<!--logo -->
+    				<a href="index.html" class="navbar-brand" id="logo"><img src="images/logo2.png"></a>
+
+    			</div>
+
+
+    			<!--end navbar -->
+
+    		</div>
     		<!--end container -->
-            
-        </nav>
+
+    	</nav>
     	<!--end nav -->
-        
+
     </header>
     <!--end header -->
 
-		<!--begin section-contact-->
-		<div class="section-dark" id="contact">
-		
-			<!--begin container -->
-			<div class="container">
-		
-				<!--begin row -->
-				<div class="row">
-		
-					<!--begin col md 12 -->
-					<div class="col-md-12">
-		
-						<div class="zeus-dark-headings-center-form">
-		
-							<h3>Ingresa tus datos para brindarte mayor información del Fondo de Pensiones Atlántida.</h3>
-		
-						</div>
-		
-						<!--begin success message -->
-						<p class="contact_success_box" style="display:none;">¡Hemos recibido tu solicitud, pronto uno de
-							nuestros agentes se pondra en contacto contigo.!</p>
-						<!--end success message -->
-		
-						<!--begin contact form -->
-						<form id="contact-form" class="zeus-contact text-center form-row" action="" method="post">
-		
-							<div class="form-row">
-								<div class="col-md-6">
-									<input type="text" class="zeus-contact-input" placeholder="Nombre y Apeliido" required=""
-										name="contact_names">
-								</div>
-							</div>
-		
-							<div class="form-row">
-								<div class="col-md-6">
-									<input type="email" class="zeus-contact-input" placeholder="No. de Identidad" required=""
-										name="contact_id">
-								</div>
-							</div>
-		
-							<div class="form-row">
-								<div class="col-md-6">
-									<input type="text" class="zeus-contact-input" placeholder="No. de Celular" required=""
-										name="contact_cel">
-								</div>
-							</div>
-		
-							<div class="form-row">
-								<div class="col-md-6">
-									<input type="email" class="zeus-contact-input" placeholder="Correo Electrónico" required=""
-										name="contact_email">
-								</div>
-							</div>
-		
-							<div class="form-row custom-row">
-								<div class="col-md-6">
-									<select class="form-control" id="exampleFormControlSelect1" required=""
-										name="contact_residencia">
-										<option selected>Elige tu lugar de Residencia...</option>
-										<option>Atlántida</option>
-										<option>Choluteca</option>
-										<option>Colón</option>
-										<option>Comayagua</option>
-										<option>Copán</option>
-										<option>Cortés</option>
-										<option>El Paraíso</option>
-										<option>Francisco Morazán</option>
-										<option>Gracias a Dios</option>
-										<option>Intibucá</option>
-										<option>Islas de la Bahía</option>
-										<option>La Paz</option>
-										<option>Lempira</option>
-										<option>Ocotepeque</option>
-										<option>Olancho</option>
-										<option>Santa Bárbara</option>
-										<option>Valle</option>
-										<option>Yoro</option>
-									</select>
-								</div>
-							</div>
-		
-							<div class="form-row">
-								<div class="col-md-6">
-									<textarea class="zeus-contact-comment" rows="2" cols="20" name="contact_message"
-										placeholder="Cuéntanos cuáles son tus dudas:"></textarea>
-								</div>
-							</div>
-		
-							<div class="zeus-contact-wrapper">
-		
-								<input value="Enviar Solicitud" id="submit-button" class="zeus-contact-submit" type="submit">
-		
-							</div>
-		
-						</form>
-						<!--end contact form -->
-		
-					</div>
-					<!--end col md 10 -->
-		
-				</div>
-				<!--end row -->
-		
-			</div>
-			<!--end container -->
-		
-		</div>
-		<!--end section contact-->
+    <!--begin hero section-->
+    <section class="zeus-video-section" id="home_wrapper">
 
+
+		 	<!--begin section-contact-->
+		 	<div class="section-dark" id="contact">
+
+		 		<!--begin container -->
+		 		<div class="container">
+
+		 			<!--begin row -->
+		 			<div class="row">
+
+		 				<!--begin col md 12 -->
+		 				<div class="col-md-12">
+
+		 					<div class="zeus-dark-headings-center-form">
+
+		 						<h3>Ingresa tus datos para brindarte mayor información del Fondo de Pensiones Atlántida.</h3>
+
+		 					</div>
+
+		 					<!--begin success message -->
+		 					<p class="contact_success_box" style="display:none;">¡Hemos recibido tu solicitud, pronto uno de
+		 						nuestros agentes se pondra en contacto contigo.!</p>
+		 					<!--end success message -->
+
+		 					<!--begin contact form -->
+		 					<form id="contact-form" class="zeus-contact text-center form-row" action="recibido.php"
+		 						onsubmit="return submitUserForm();" method="post">
+
+		 						<div class="form-row">
+		 							<div class="col-md-6">
+		 								<input type="text" class="zeus-contact-input" placeholder="Nombre y Apeliido"
+		 									required="" name="contact_names">
+		 							</div>
+		 						</div>
+
+		 						<div class="form-row">
+		 							<div class="col-md-6">
+		 								<input type="text" class="zeus-contact-input" placeholder="No. de Identidad" required=""
+		 									name="contact_id">
+		 							</div>
+		 						</div>
+
+		 						<div class="form-row">
+		 							<div class="col-md-6">
+		 								<input type="text" class="zeus-contact-input" placeholder="No. de Celular" required=""
+		 									name="contact_cel">
+		 							</div>
+		 						</div>
+
+		 						<div class="form-row">
+		 							<div class="col-md-6">
+		 								<input type="email" class="zeus-contact-input" placeholder="Correo Electrónico"
+		 									required="" name="contact_email">
+		 							</div>
+		 						</div>
+
+		 						<div class="form-row custom-row">
+		 							<div class="col-md-6">
+		 								<select class="form-control" id="exampleFormControlSelect1" required=""
+		 									name="contact_residencia">
+		 									<option value="">Elige tu lugar de Residencia...</option>
+		 									<option value="2">Atlántida</option>
+		 									<option value="3">Choluteca</option>
+		 									<option value="4">Colón</option>
+		 									<option value="5">Comayagua</option>
+		 									<option value="6">Copán</option>
+		 									<option value="7">Cortés</option>
+		 									<option value="8">El Paraíso</option>
+		 									<option value="9">Francisco Morazán</option>
+		 									<option value="10">Gracias a Dios</option>
+		 									<option value="11">Intibucá</option>
+		 									<option value="12">Islas de la Bahía</option>
+		 									<option value="13">La Paz</option>
+		 									<option value="14">Lempira</option>
+		 									<option value="15">Ocotepeque</option>
+		 									<option value="16">Olancho</option>
+		 									<option value="17">Santa Bárbara</option>
+		 									<option value="18">Valle</option>
+		 									<option value="19">Yoro</option>
+		 								</select>
+		 							</div>
+		 						</div>
+
+		 						<div class="form-row custom-row">
+		 							<div class="col-md-6">
+		 								<select class="form-control" id="exampleFormControlSelect1" required=""
+		 									name="contact_residencia">
+		 									<option value="">¿Ya cuentas con un Fondo de Pensiones Atlántida?</option>
+		 									<option value="1">Si</option>
+		 									<option value="2">No</option>
+		 								</select>
+		 							</div>
+		 						</div>
+
+		 						<div class="form-row">
+		 							<div class="col-md-6 col-lg-12">
+		 								<textarea class="zeus-contact-comment" rows="2" cols="20" name="contact_message"
+		 									placeholder="Cuéntanos cuáles son tus dudas:"></textarea>
+		 							</div>
+		 						</div>
+
+		 						<div class="form-row">
+		 							<div class="col-md-12">
+		 								<div id="g-recaptcha-error"
+		 									style="font-size: 1.7rem; color: #FFF; margin-bottom: 1rem;"></div>
+		 								<div class="g-recaptcha" data-sitekey="6LejyXoUAAAAAGKJp0wCmRx0oOSFlNHCsOICzpwR"
+		 									data-callback="verifyCaptcha" style="margin-bottom: 1rem;"></div>
+		 							</div>
+		 						</div>
+
+		 						<div class="zeus-contact-wrapper">
+
+		 							<input value="Enviar Solicitud" id="submit-button" name="submit-button"
+		 								class="zeus-contact-submit" type="submit">
+
+		 						</div>
+
+		 						<!-- RECAPTCHA SCRIPTS -->
+		 						<script src='https://www.google.com/recaptcha/api.js'></script>
+		 						<script>
+		 							function submitUserForm() {
+		 								var response = grecaptcha.getResponse();
+		 								if (response.length == 0) {
+		 									document.getElementById('g-recaptcha-error').innerHTML =
+		 										'<span style="background-color: #0000008f; display: inline-block; padding: 1rem; border-radius: .5rem;">Este campo es requerido</span>';
+		 									return false;
+		 								}
+		 								return true;
+		 							}
+
+		 							function verifyCaptcha() {
+		 								document.getElementById('g-recaptcha-error').innerHTML = '';
+		 							}
+		 						</script>
+
+		 					</form>
+		 					<!--end contact form -->
+
+		 				</div>
+		 				<!--end col md 10 -->
+
+		 			</div>
+		 			<!--end row -->
+
+		 		</div>
+		 		<!--end container -->
+
+		 	</div>
+		 	<!--end section contact-->
+
+
+    </section>
+    <!--begin hero section-->
 
     <!--begin section white-->
   	<section class="section-white" id="about">
@@ -428,73 +502,72 @@
   	</section>
 	  <!--end section white -->
 
-  
-	  
-	<!--begin hero section-->
-	<section class="zeus-video-section" id="home_wrapper">
-	
-		<div class="zeus-video-overlay"></div>
-	
-		<div id="player" class="video-background">
-			<div class="video-foreground">
-				<iframe
-					src="https://www.youtube.com/embed/BmkBAAwkkbI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=BmkBAAwkkbI;start=20"
-					frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div class="video-overlay"></div>
+ 
+<!--begin hero section-->
+<section class="zeus-video-section" id="home_wrapper">
+
+	<div class="zeus-video-overlay"></div>
+
+	<div id="player" class="video-background">
+		<div class="video-foreground">
+			<iframe
+				src="https://www.youtube.com/embed/tJ5xU_5Zh9U?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=tJ5xU_5Zh9U;start=20"
+				frameborder="0" allowfullscreen></iframe>
 		</div>
-	
-		<!--begin container -->
-		<div class="container">
-	
-			<!--begin row -->
-			<div class="row">
-	
-				<!--begin col md 12 -->
-				<div class="col-md-12">
-	
-					<div class="zeus-home-title text-center">
-	
-						<h1>Es hora de</h1>
-	
-						<p>Planificar tu futuro</p>
-	
-						<!--begin popup-gallery-->
-						<div class="popup-gallery">
-							<a class="popup4 zeus-video-icon" href="https://www.youtube.com/watch?v=2B3i0bu09zU&">
-								<i class="fa fa-play"></i></a>
-						</div>
-						<!--end popup-gallery-->
-	
-						<ul class="zeus-hero-social">
-	
-							<li><a href="https://www.facebook.com/afpatlantida" target="_blank""><i class=" fa
-									fa-facebook"></i></a></li>
-							<li><a href="https://es.linkedin.com/company/afp-atl%C3%A1ntida" target="_blank"><i
-										class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://www.instagram.com/afpatlantida/" target="_blank"><i
-										class="fa fa-instagram"></i></a></li>
-							<li><a href="https://www.youtube.com/channel/UCcEXdkZPCy6cKIpO4XyjftA" target="_blank"><i
-										class="fa fa-youtube"></i></a></li>
-	
-						</ul>
-	
+		<div class="video-overlay"></div>
+	</div>
+
+	<!--begin container -->
+	<div class="container">
+
+		<!--begin row -->
+		<div class="row">
+
+			<!--begin col md 12 -->
+			<div class="col-md-12">
+
+				<div class="zeus-home-title text-center">
+
+					<h1>Es hora de</h1>
+
+					<p>Planificar tu futuro</p>
+
+					<!--begin popup-gallery-->
+					<div class="popup-gallery">
+						<a class="popup4" href="https://www.youtube.com/watch?v=tJ5xU_5Zh9U">
+							<!--<a class="popup4 zeus-video-icon" href="https://www.youtube.com/watch?v=2B3i0bu09zU&"></a> -->
+							<!--<i class="fa fa-play"></i></a> -->
+							<i class="fa fa-play"></i><span class="video-action">(Ver vídeo comercial)</span></a>
+
 					</div>
-	
+					<!--end popup-gallery-->
+
+					<ul class="zeus-hero-social">
+
+						<li><a href="https://www.facebook.com/afpatlantida" target="_blank""><i class=" fa
+								fa-facebook"></i></a></li>
+						<li><a href="https://es.linkedin.com/company/afp-atl%C3%A1ntida" target="_blank"><i
+									class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://www.instagram.com/afpatlantida/" target="_blank"><i
+									class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCcEXdkZPCy6cKIpO4XyjftA" target="_blank"><i
+									class="fa fa-youtube"></i></a></li>
+
+					</ul>
+
 				</div>
-				<!--end col md 12 -->
-	
+
 			</div>
-			<!--end row -->
-	
+			<!--end col md 12 -->
+
 		</div>
-		<!--end container -->
-	
-	</section>
-	<!--begin hero section-->
+		<!--end row -->
 
+	</div>
+	<!--end container -->
 
-
+</section>
+<!--begin hero section-->
 
 
 
@@ -556,7 +629,7 @@
 				<div class="col-md-12">
 
 					<p class="zeus-copyright">
-						<span class="col-md-12 footer-custom-text">Es hora de planificar tu futuro, ¡Afiliate Hoy!</span>
+						<span class="col-md-12 footer-custom-text">Es hora de planificar tu futuro, ¡Afíliate Hoy!</span>
 					</p>
 
 					<p class="zeus-copyright">
