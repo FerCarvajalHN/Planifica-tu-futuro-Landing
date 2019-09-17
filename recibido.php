@@ -54,6 +54,7 @@
             $msg .= '<p style="margin:0;"><b>Correo Electrónico: </b>'.$_POST['contact_email'].'</p>';
             $msg .= '<p style="margin:0;"><b>Celular: </b>'.$_POST['contact_cel'].'</p>';
             $msg .= '<p style="margin:0;"><b>Ciudad de Residencia: </b>'.$_POST['contact_residencia'].'</p>';
+            $msg .= '<p style="margin:0;"><b>¿Ya cuentas con un Fondo de Pensiones Atlántida?: </b>'.$_POST['contact_ya_cuentas'].'</p>';
             $msg .= '<p style="margin:0;"><b>Cuéntanos cuáles son tus dudas: </b>'.$_POST['contact_message'].'</p>';
             $msg .= '</body></html>';
 
