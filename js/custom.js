@@ -186,28 +186,49 @@ $(window).on('load', function(){
 
 	$(document).ready(function() {
 
-          // Change tab class and display content
-          $('div.tab-content').not('[data-tab=1]').addClass('hide');
+		// Change tab class and display content
+		$('div.tab-content').not('[data-tab=1]').addClass('hide');
 
-          $('.tabs-nav li').first().addClass('active');
-          $('.tabs-nav li').on('click', function() {
-          $(this).addClass('active');
-          $('.tabs-nav li').not(this).removeClass('active');
+		$('.tabs-nav li').first().addClass('active');
+		$('.tabs-nav li').on('click', function() {
+		$(this).addClass('active');
+		$('.tabs-nav li').not(this).removeClass('active');
 
-          //start sort
-          var sortable = $(this).attr('data-tab');
-            $('div[data-tab = '+sortable+']').removeClass('hide');
-            $('div.tab-content').not('[data-tab='+sortable+']').addClass('hide');
-          });
+		//start sort
+		var sortable = $(this).attr('data-tab');
+		$('div[data-tab = '+sortable+']').removeClass('hide');
+		$('div.tab-content').not('[data-tab='+sortable+']').addClass('hide');
+		});
 
-          //add an all option - to show all tabs when clicked
-          $('li[data-tab=all]').on('click', function() {
-            $(this).addClass('active');
-            $('div.tab-content').removeClass('hide');
-          });
+		//add an all option - to show all tabs when clicked
+		$('li[data-tab=all]').on('click', function() {
+		$(this).addClass('active');
+		$('div.tab-content').removeClass('hide');
+		});
 
-        });
+	});
 
+
+	/* ========================================================== */
+	/*   Validación Solo Letras                                   */
+	/* ========================================================== */
 	
-	
+	function soloLetras(e){
+		key = e.keyCode || e.which;
+		tecla = String.fromCharCode(key).toLowerCase();
+		letras = " Ã¡Ã©Ã­Ã³ÃºabcdefghijklmnÃ±opqrstuvwxyz";
+		especiales = "8-37-39-46";
+
+		tecla_especial = false
+		for(var i in especiales){
+			if(key == especiales[i]){
+				tecla_especial = true;
+				break;
+			}
+		}
+
+		if(letras.indexOf(tecla)==-1 && !tecla_especial){
+			return false;
+		}
+	}
  	
